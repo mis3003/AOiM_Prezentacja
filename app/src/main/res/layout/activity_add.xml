@@ -1,0 +1,46 @@
+<!-- res/layout/activity_edit_contact.xml -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray">
+
+    <EditText
+        android:id="@+id/nameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nazwa"
+        android:layout_margin="16dp"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/phoneText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Numer telefonu"
+        android:layout_below="@+id/nameText"
+        android:layout_margin="16dp"
+        android:inputType="phone"/>
+
+    <EditText
+        android:id="@+id/emailText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Adres e-mail"
+        android:layout_below="@+id/phoneText"
+        android:layout_margin="16dp"
+        android:inputType="textEmailAddress"/>
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zapisz"
+        android:layout_below="@+id/emailText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:onClick="onSaveButtonClick"
+        android:backgroundTint="@color/colorSage"/>
+
+</RelativeLayout>
